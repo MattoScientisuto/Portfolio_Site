@@ -2,3 +2,36 @@
     background-color: #44434e;
     text-align: center;
 }
+
+.image-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-container img {
+    transition: transform 0.2s;
+}
+
+/* Create a feathered border around non-transparent parts of the image */
+.image-container::before {
+    content: "";
+    position: absolute;
+
+    border-image: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    border-image-slice: 1; /* Ensure the entire border is used as an image */
+    border-radius: 20px; /* Adjust the value as needed */
+    pointer-events: none; /* Allow clicks to pass through the overlay */
+    transition: opacity 0.2s; /* Smooth opacity transition */
+    opacity: 0; /* Initially hidden */
+}
+
+/* Show the feathered border and zoom effect on hover */
+.image-container:hover::before {
+    opacity: 1; /* Show the overlay */
+}
+
+/* Zoom effect on hover */
+.image-container:hover img {
+    transform: scale(1.05);
+}
