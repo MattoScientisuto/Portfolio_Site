@@ -1,10 +1,19 @@
 #name_intro {
-    text-align: center;
+    text-align: left;
     font-size: 40px;
     font-family: monospace;
     font-weight: bold;
+    padding: 15px
 }
 
-#selfie {
-    text-align: right;
+.main-content {
+    float: left;
+    width: 60%; /* Adjust this value as needed */
+    padding: 20px;
+}
+
+.text-info {
+    width: 60%;
+    padding: 20px;
+    font-size: 140%;
 }
