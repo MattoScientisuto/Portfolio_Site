@@ -1,0 +1,50 @@
+/*https://codemyui.com/pure-css-text-glitch-and-twerk/*/
+.container {
+  position: relative;
+}
+
+.glitch {
+  color: transparent; /* Make text transparent */
+  position: relative;
+  overflow: hidden;
+  font-size: 9vw;
+  margin: 10px 10px;
+  animation: glitch 6s 0.1s infinite;
+}
+
+.glitch img {
+  max-width: 60%; /* Ensure the image does not exceed the container's width */
+  height: auto; /* Let the height adjust to maintain aspect ratio */
+  animation: glitch-color 0.011s 0.03s infinite;
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(12deg) skewX(100deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+@keyframes glitch-color {
+  0%, 100% {
+    filter: hue-rotate(0deg);
+  }
+  10% {
+    filter: hue-rotate(20deg); /* Increased hue rotation for a more dramatic effect */
+  }
+  20% {
+    filter: hue-rotate(-20deg); /* Increased negative hue rotation */
+  }
+  30% {
+    filter: hue-rotate(20deg);
+  }
+  40% {
+    filter: hue-rotate(-20deg);
+  }
+  50% {
+    filter: hue-rotate(0deg);
+  }
+}
+
+/*# sourceMappingURL=cyberpunk_logo.css.map */

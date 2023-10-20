@@ -1,3 +1,8 @@
 .set-container {
     text-align: center;
 }
+
+.series-image{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
