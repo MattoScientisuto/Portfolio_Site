@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="top_bar\top_bar.css">
     <link rel="stylesheet" href="body_texts\main_text.css">
     <link rel="stylesheet" href="photo_carousel\carousel.css">
+    <link rel="stylesheet" href="music_player.css">
+
+    <script src="music_player.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
     <title>Matthew Duong's Portfolio</title>
 
@@ -21,6 +25,15 @@
 <!-- =============== END OF SETUP ================= -->
 
 <body>
+    <!-- MUSIC PLAYER -->
+    <div class="player-container">
+    <h2 class="playing">Now playing - <span class="song-name"></span></h2>
+            <div class="controls">
+                <button class="btn music-previous"><i class="ph-bold ph-skip-back"></i></button>
+                <button class="btn play-pause"><i id="play-pause-icon" class="ph-bold ph-play"></i></button>
+                <button class="btn music-next"><i class="ph-bold ph-skip-forward"></i></button>
+            </div>
+    </div>        
     <!-- HEADER BANNER PHOTO -->
     <div class="titlelogo">
         <div class="image-container"><a href="index.html">
@@ -68,37 +81,28 @@
 
     <!-- SLIDESHOW CONTAINER -->
     <div class="slideshow-container">
-        <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="images\self.jpg" width="450px">
-        <div class="text">First day intern orientation at Jet Propulsion Laboratory.</div>
+            <div class="numbertext">1 / 3</div>
+            <img src="images\self.jpg" width="500px">
+            <div class="text">Picture of me! (2021)</div>
         </div>
             
         <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="images\sparta_gang.jpg" width="500px">
-        <div class="text">Co-intern, mentor Dr. Robert Anderson, and me (left to right).</div>
+            <div class="numbertext">2 / 3</div>
+            <img src="images\jpl_firstday.jpg" width="500px">
+            <div class="text">First day intern orientation at Jet Propulsion Laboratory.</div>
         </div>
             
         <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="images\sparta_showcase.jpg" width="500px">
-        <div class="text">Me assisting Dr. Robert Anderson and Dr. Luke Sollitt in demonstrating our project machinery to other scientists.</div>
+            <div class="numbertext">3 / 3</div>
+            <img src="images\ax.jpg" width="500px">
+            <div class="text">Anime Expo 2023 in Los Angeles with family.</div>
         </div>
-            
-        <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
-            
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+    
     
     <script src="photo_carousel\carousel.js"></script>
 

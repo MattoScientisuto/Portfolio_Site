@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="top_bar\top_bar.css">
     <link rel="stylesheet" href="body_texts\main_text.css">
     <link rel="stylesheet" href="photo_carousel\carousel.css">
+    <link rel="stylesheet" href="music_player.css">
+
+    <script src="music_player.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
 
     <title>Matthew Duong's Portfolio</title>
 
@@ -21,6 +26,15 @@
 <!-- =============== END OF SETUP ================= -->
 
 <body>
+    <!-- MUSIC PLAYER -->
+    <div class="player-container">
+        <h2 class="playing">Now playing- <span class="song-name"></span></h2>
+                <div class="controls">
+                    <button class="btn music-previous"><i class="ph-bold ph-skip-back"></i></button>
+                    <button class="btn play-pause"><i id="play-pause-icon" class="ph-bold ph-play"></i></button>
+                    <button class="btn music-next"><i class="ph-bold ph-skip-forward"></i></button>
+                </div>
+    </div>    
     <!-- HEADER BANNER PHOTO -->
     <div class="titlelogo">
         <div class="image-container"><a href="index.html">
@@ -77,33 +91,33 @@
     <div class="slideshow-container">
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
-        <div class="numbertext">1 / 5</div>
-        <img src="images\jpl_firstday.jpg" width="500px">
-        <div class="text">First day intern orientation at Jet Propulsion Laboratory.</div>
+            <div class="numbertext">1 / 5</div>
+            <img src="images\jpl_firstday.jpg" width="500px">
+            <div class="text">First day intern orientation at Jet Propulsion Laboratory.</div>
         </div>
             
         <div class="mySlides fade">
-        <div class="numbertext">2 / 5</div>
-        <img src="images\sparta_probe.jpg" width="500px">
-        <div class="text">Old version of the SPARTA test bench probe in its idle position.</div>
+            <div class="numbertext">2 / 5</div>
+            <img src="images\sparta_probe.jpg" width="500px">
+            <div class="text">Old version of the SPARTA test bench probe in its idle position.</div>
         </div>
             
         <div class="mySlides fade">
-        <div class="numbertext">3 / 5</div>
-        <img src="images\sparta_glass.jpg" width="500px">
-        <div class="text">SPARTA test bench submerged in 0.5mm glass beads for calibration.</div>
+            <div class="numbertext">3 / 5</div>
+            <img src="images\sparta_glass.jpg" width="500px">
+            <div class="text">SPARTA test bench submerged in 0.5mm glass beads for calibration.</div>
         </div>
 
         <div class="mySlides fade">
-        <div class="numbertext">4 / 5</div>
-        <img src="images\sparta_showcase.jpg" width="500px">
-        <div class="text">Me assisting Dr. Robert Anderson and Dr. Luke Sollitt in demonstrating our project machinery to other scientists.</div>
+            <div class="numbertext">4 / 5</div>
+            <img src="images\sparta_showcase.jpg" width="500px">
+            <div class="text">Me assisting Dr. Robert Anderson and Dr. Luke Sollitt in demonstrating our project machinery to other scientists.</div>
         </div>
 
         <div class="mySlides fade">
-        <div class="numbertext">5 / 5</div>
-        <img src="images\sparta_gang.jpg" width="500px">
-        <div class="text">Co-intern Johnson Tat, mentor Dr. Robert Anderson, and me (left to right).</div>
+            <div class="numbertext">5 / 5</div>
+            <img src="images\sparta_gang.jpg" width="500px">
+            <div class="text">Co-intern Johnson Tat, mentor Dr. Robert Anderson, and me (left to right).</div>
         </div>
             
         <!-- Next and previous buttons -->
@@ -114,12 +128,7 @@
     <img src="images\cpt_run.png" width="500px">
     <br>
             
-    <!-- The dots/circles -->
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
+
     
     <script src="photo_carousel\carousel.js"></script>
 </body>

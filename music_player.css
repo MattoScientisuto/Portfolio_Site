@@ -1,0 +1,25 @@
+.btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+  
+.controls {
+    display: flex;
+    justify-content: center;
+}
+
+.btn:hover {
+    color: rgb(0, 255, 106);
+}
+
+.playing {
+    text-align: center;
+    color: aliceblue;
+}
+
+.player-container {
+    background-color: rgb(114, 110, 136);
+}
