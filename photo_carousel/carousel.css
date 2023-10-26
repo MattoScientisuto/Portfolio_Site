@@ -1,4 +1,4 @@
-/* * {box-sizing:border-box} */
+* {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
@@ -13,13 +13,10 @@
   margin-top: 25px;
 }
 
-
 /* Hide the images by default */
 .mySlides {
   display: none;
 }
-
-
 
 /* Next & previous buttons */
 .prev, .next {
