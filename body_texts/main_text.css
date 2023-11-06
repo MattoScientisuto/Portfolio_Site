@@ -29,3 +29,17 @@
     padding: 1px;
     font-size: 140%;
 }
+
+
+.swift-container {
+    text-align: center;
+}
+
+
+#saul {
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
