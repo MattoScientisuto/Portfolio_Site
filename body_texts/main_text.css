@@ -30,16 +30,30 @@
     font-size: 140%;
 }
 
+.jpl-img-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.jpl-img-container img {
+    display: inline-block;
+    width: calc(30% - 1px); /* 50% width minus 20px padding (10px for each image) */
+    padding: 10px;
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+#fac-aff {
+    padding-top: 100px;
+}
 
 .swift-container {
     text-align: center;
 }
 
 
-#saul {
+/* #saul {
     margin: 0;
     position: absolute;
     top: 70%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-}
+} */

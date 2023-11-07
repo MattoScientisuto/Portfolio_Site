@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line to horizontally center the clock elements */
+    font-family: Arial, sans-serif;
+    color: white;
+    height: 100%; /* Add this line to ensure the wrapper takes up the full height */
+}
+
+
+  .tube {
+    margin: 0 5px;
+    text-align: center;
+  }
+  
+  .tube p {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  #hour1,
+  #hour2,
+  #minute1,
+  #minute2,
+  #second1,
+  #second2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .divider {
+    font-size: 24px;
+  }
+  
+  
