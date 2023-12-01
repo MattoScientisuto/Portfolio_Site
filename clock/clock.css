@@ -1,30 +1,67 @@
 .wrapper {
     display: flex;
     align-items: center;
-    justify-content: center; /* Add this line to horizontally center the clock elements */
-    font-family: Arial, sans-serif;
-    color: white;
-    height: 100%; /* Add this line to ensure the wrapper takes up the full height */
+    justify-content: center; 
+    font-family: 'Nixie One', cursive;
+    text-shadow: 0px 0px 5px red;  
+    color: rgba(236,165,0,1);
+    height: 100%; 
 }
 
-
-  .tube {
-    margin: 0 5px;
-    text-align: center;
-  }
+.tube {	
+	font-size: 100px;
+	color: rgba(0,0,0,0.3);
+	width: 50px;
+	height: 85px;
+	text-align: center;
+	float: left;
+	border: 1px solid white;
+	border-radius: 50px 50px 0 0;
+	padding-top: 30px;
+}
   
   .tube p {
     font-size: 24px;
     margin: 0;
   }
+
+  .tube div {
+    top: -167px;
+    text-shadow: 0px 0px 5px red;  
+    color: rgba(236,165,0,1);
+  }
+
+  .divider {
+    float: left;
+    text-shadow: 0px 0px 5px red;  
+    color: rgba(236,165,0,1);
+    font-size: 76px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-top: 15px;
+    height: 80px;
+    z-index: 1;
+    position: relative;
+  }
   
+  .tube, .divider {
+    margin-right: 13px;
+    background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 35%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(35%,rgba(255,255,255,0)));
+    background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 35%);
+    background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 35%);
+    background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 35%);
+    background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 35%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+  }
+
   #hour1,
   #hour2,
   #minute1,
   #minute2,
   #second1,
   #second2 {
-    font-size: 36px;
+    font-size: 30px;
     font-weight: bold;
   }
   
