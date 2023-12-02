@@ -16,6 +16,17 @@
     text-align: center;
     font-size: 30px;
 }
+#swift{
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    font-style: italic;
+}
+#li-liu{
+    text-align: center;
+    font-weight: lighter;
+    font-style: italic;
+}
 
 
 .main-content {
