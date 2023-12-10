@@ -11,9 +11,7 @@
     <link rel="stylesheet" href="cosplay_align\cosplay_align.css">
     <link rel="stylesheet" href="music_player.css">
     <link rel="stylesheet" href="clock\clock.css">
-
-    <script src="music_player.js"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="loading_screen\loading_screen.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io\apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io\favicon-32x32.png">
@@ -34,7 +32,9 @@
 
 <!-- =============== END OF SETUP ================= -->
 
-<body>
+<body>    
+    <script src="music_player.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- MUSIC PLAYER -->
     <div class="player-container">
         <h2 class="playing">Now playing: <span class="song-name"></span></h2>
@@ -167,4 +167,6 @@
         Since cosplay is a staple activity within anime and conventions in general, I wanted to give it a shot, even though I didn't reall have any prior interest in it.
         I knew that I always admired female characters from anime the most, so I figured it would be a great 
     </div> -->
+    <div class="loader"></div>
+    <script src="loading_screen\loading_screen.js"></script>
 </body>

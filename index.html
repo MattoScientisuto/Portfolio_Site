@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="photo_carousel\carousel.css">
     <link rel="stylesheet" href="music_player.css">
     <link rel="stylesheet" href="clock\clock.css">
-
-    <script src="music_player.js"></script>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="loading_screen\loading_screen.css">
 
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io\apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io\favicon-32x32.png">
@@ -30,7 +28,9 @@
 
 <!-- =============== END OF SETUP ================= -->
 
-<body>
+<body>    
+    <script src="music_player.js"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <!-- MUSIC PLAYER -->
     <div class="player-container">
     <h2 class="playing">Now playing: <span class="song-name"></span></h2>
@@ -160,11 +160,10 @@
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
-    <br>
-    
-    
+    <br> 
     <script src="photo_carousel\carousel.js"></script>
-
     <script src="top_bar\tab_navigation.js"></script>
+    <script src="loading_screen\loading_screen.js"></script>
+    <div class="loader"></div>
 </body>
 </html>
