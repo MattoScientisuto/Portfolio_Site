@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'LuckiestGuy';
+    src: url(font-imports\LuckiestGuy.ttf) format("truetype");
+}
+
 .loader {
     position: fixed;
     top: 0;
@@ -12,19 +17,39 @@
     z-index: 50;
 }
 
+.loader img{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 45%;
+}
+
+.loader p{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-family: 'LuckiestGuy';
+}
+
 .loader-hidden{
     opacity: 0;
     visibility: hidden;
 }
 
 .loader::after{
+    position: fixed;
     content: "";
-    width: 75px;
-    height: 75px;
-    border: 15px solid #e7e7e7;
-    border-top-color: #734783;
+    width: 30px;
+    height: 30px;
+    bottom: 30%;
+    border: 15px solid rgb(228, 228, 228);
+    border-top-color: rgb(35, 44, 87);
     border-radius: 50%;
-    animation: loading 0.75s ease infinite;
+    animation: loading 0.92s ease infinite;
 }
 
 @keyframes loading{
@@ -32,6 +57,6 @@
         transform: rotate(0turn);
     }
     to {
-        transform: rotate(1turn);
+        transform: rotate(-1turn);
     }
 }
