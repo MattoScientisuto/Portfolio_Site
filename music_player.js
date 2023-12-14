@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
     const ziziAudio = new Audio('./music/zizi.mp3');
+    const elnathAudio = new Audio('./music/elnath.mp3');
     const bhistoryAudio = new Audio('./music/bhistory.mp3');
     ziziAudio.volume = 0.25;
+    elnathAudio.volume = 0.25;
     bhistoryAudio.volume = 0.15;
 
     const prevBtn = document.querySelector('.music-previous');
@@ -12,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const songs = [
         { ele: ziziAudio, audioName: 'Waltz For Zizi - The Seatbelts & Yoko Kanno' },
+        { ele: elnathAudio, audioName: 'El Nath - MapleStory' },
         { ele: bhistoryAudio, audioName: 'Browser History - Graham Kartna' },
     ];
 
