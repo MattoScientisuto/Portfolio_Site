@@ -36,3 +36,17 @@
 .image-container:hover img {
     transform: scale(1.05);
 }
+
+.left-photo{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transform: translate(0px,92px);
+}
+.left-photo img{
+    height: auto;
+    width: 100%;
+    z-index: -5;
+    opacity: 15%;
+    
+}
